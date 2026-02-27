@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBD</title>
+    <title>NEW BEGINNINGS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="canvas1"></canvas>
-
-
-
-
-
     
+    <div class="game-wrap">
+        <canvas id="canvas1" width="800" height="450"></canvas>
+        <div id="hud">
+            <div id="coins">Coins: 0</div>
+            <div id="ability">Ability: None</div>
+            <div id="skeletons">Skeletons: 0</div>
+        </div>
+        <div id="overlays">
+            <div id="startScreen" class="overlay visible">
+                <h1>New Beginnings</h1>
+                <p>Arrow keys to move, Space to jump, 1 to shoot (when you have ability)</p>
+                <button id="btnStart">Start Game</button>
+            </div>
+            <div id="pauseScreen" class="overlay">
+                <h2>Paused</h2>
+                <button id="btnResume">Resume</button>
+            </div>
+            <div id="levelComplete" class="overlay">
+                <h2>Level Complete</h2>
+                <p id="nextInfo"></p>
+                <button id="btnNextLevel">Next Level</button>
+            </div>
+            <div id="gameOver" class="overlay">
+                <h2>Game Over</h2>
+                <p id="gameOverInfo"></p>
+                <button id="btnRestart">Restart</button>
+            </div>
+            <div id="victory" class="overlay">
+                <h2>Victory!</h2>
+                <p>You beat the game.</p>
+                <button id="btnPlayAgain">Play Again</button>
+            </div>
+        </div>
+        <div id="message"></div>
+    </div>
+
     <script src="script.js"></script>
     </body>
-
 </html>
